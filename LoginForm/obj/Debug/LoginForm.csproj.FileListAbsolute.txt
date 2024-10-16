@@ -1,0 +1,12 @@
+D:\Studyspace\WindowsForms\LoginForm\LoginForm\bin\Debug\LoginForm.exe.config
+D:\Studyspace\WindowsForms\LoginForm\LoginForm\bin\Debug\LoginForm.exe
+D:\Studyspace\WindowsForms\LoginForm\LoginForm\bin\Debug\LoginForm.pdb
+D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.csproj.AssemblyReference.cache
+D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.LoginForm.resources
+D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
+D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.csproj.GenerateResource.cache
+D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.csproj.CoreCompileInputs.cache
+D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.exe
+D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.pdb
+D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.Register.resources
+D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.Dashboard.resources
