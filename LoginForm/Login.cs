@@ -87,22 +87,39 @@ namespace LoginForm
                     cmd.Parameters.AddWithValue("@username", txtUsername.Text);
                     cmd.Parameters.AddWithValue("@password", hashedPassword); // Sử dụng mật khẩu đã mã hóa
 
-                    using (SqlDataReader dr = cmd.ExecuteReader())
-                    {
-                        if (dr.Read())
-                        {
-                            string username = txtUsername.Text;
-                            Dashboard dashboard = new Dashboard(username);
-                            this.Hide();
-                            dashboard.Show();
+                    // using (SqlDataReader dr = cmd.ExecuteReader())
+                    // {
+                    //     if (dr.Read())
+                    //     {
+                    //         string username = txtUsername.Text;
+                    //         Dashboard dashboard = new Dashboard(username);
+                    //         this.Hide();
+                    //         dashboard.Show();
                             
-                        }
-                        else
-                        {
-                            MessageBox.Show("Password is incorrect, Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            txtPassword.Clear();
-                            txtPassword.Focus();
-                        }
+                    //     }
+                    //     else
+                    //     {
+                    //         MessageBox.Show("Password is incorrect, Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //         txtPassword.Clear();
+                    //         txtPassword.Focus();
+                    //     }
+                    // }
+
+                    // Chỉnh sửa ngày 17/10/2024
+                    // Sử Dụng ExecuteScalar: Sử dụng ExecuteScalar để nhận ID người dùng
+                    object result = cmd.ExecuteScalar(); // Thay vì ExecuteReader
+                    if (result != null)
+                    {
+                        int userId = Convert.ToInt32(result); // Lấy ID người dùng
+                        Dashboard dashboard = new Dashboard(txtUsername.Text, userId); // Truyền username và ID
+                        this.Hide();
+                        dashboard.Show();
+                    }
+                    else
+                    {
+                    MessageBox.Show("Password is incorrect, Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtPassword.Clear();
+                    txtPassword.Focus();
                     }
                 }
             }
