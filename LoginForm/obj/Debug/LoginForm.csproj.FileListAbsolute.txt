@@ -10,3 +10,16 @@ D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.exe
 D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.pdb
 D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.Register.resources
 D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.Dashboard.resources
+D:\Thanh\[4.2]NETWORK-PROGRAMMING\BTLT3\Email-Client\LoginForm\bin\Debug\LoginForm.exe.config
+D:\Thanh\[4.2]NETWORK-PROGRAMMING\BTLT3\Email-Client\LoginForm\bin\Debug\LoginForm.exe
+D:\Thanh\[4.2]NETWORK-PROGRAMMING\BTLT3\Email-Client\LoginForm\bin\Debug\LoginForm.pdb
+D:\Thanh\[4.2]NETWORK-PROGRAMMING\BTLT3\Email-Client\LoginForm\obj\Debug\LoginForm.csproj.AssemblyReference.cache
+D:\Thanh\[4.2]NETWORK-PROGRAMMING\BTLT3\Email-Client\LoginForm\obj\Debug\LoginForm.csproj.SuggestedBindingRedirects.cache
+D:\Thanh\[4.2]NETWORK-PROGRAMMING\BTLT3\Email-Client\LoginForm\obj\Debug\LoginForm.Dashboard.resources
+D:\Thanh\[4.2]NETWORK-PROGRAMMING\BTLT3\Email-Client\LoginForm\obj\Debug\LoginForm.LoginForm.resources
+D:\Thanh\[4.2]NETWORK-PROGRAMMING\BTLT3\Email-Client\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
+D:\Thanh\[4.2]NETWORK-PROGRAMMING\BTLT3\Email-Client\LoginForm\obj\Debug\LoginForm.Register.resources
+D:\Thanh\[4.2]NETWORK-PROGRAMMING\BTLT3\Email-Client\LoginForm\obj\Debug\LoginForm.csproj.GenerateResource.cache
+D:\Thanh\[4.2]NETWORK-PROGRAMMING\BTLT3\Email-Client\LoginForm\obj\Debug\LoginForm.csproj.CoreCompileInputs.cache
+D:\Thanh\[4.2]NETWORK-PROGRAMMING\BTLT3\Email-Client\LoginForm\obj\Debug\LoginForm.exe
+D:\Thanh\[4.2]NETWORK-PROGRAMMING\BTLT3\Email-Client\LoginForm\obj\Debug\LoginForm.pdb

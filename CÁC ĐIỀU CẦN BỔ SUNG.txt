@@ -1,0 +1,4 @@
+CÁC ĐIỀU CẦN BỔ SUNG
+1. Thêm ràng buộc username (hiển thị thông tin mình dựa vào username nên nếu username trùng tên thì sẽ bị lỗi)
+2. Thêm 2 trường là tên, ngày sinh (khi chạy code thì tắt 2 câu lệnh hiển thị ở phần này ra để chạy đúng)
+3. Đổi 

@@ -20,8 +20,7 @@ namespace LoginForm
             InitializeComponent();
             txtUsername.Select();
         }
-
-        SqlConnection conn = new SqlConnection(@"Data Source=HENRY\HTHSQLSERVER;Initial Catalog=RegisterForm;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Server=DESKTOP-0ARU1C6;Database=BTLT2;Trusted_Connection=True;");
 
         public class PasswordHandler
         {
