@@ -43,6 +43,27 @@ namespace LoginForm
             this.Hide();
         }
 
-       
+        private void chatbtn_Click(object sender, EventArgs e)
+        {
+            // Khởi tạo và hiển thị form Chat với username
+            ClientChat clientChat = new ClientChat(username);
+            clientChat.Show(); // Hiển thị form Chat
+            this.Hide();
+        }
+
+        private void chat_txt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lschat_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

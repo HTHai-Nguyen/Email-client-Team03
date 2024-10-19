@@ -10,14 +10,15 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
+using System.Security.Cryptography;
 namespace Server
 {
     public partial class Form1 : Form
     {
-        private TcpListener server;
-        private List<TcpClient> clients = new List<TcpClient>();
-        private bool isRunning = false;
+        private SqlConnection sqlConnection;
+        private TcpListener tcpListener;
+
         public Form1()
         {
             InitializeComponent();
@@ -25,82 +26,168 @@ namespace Server
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            StartServer();
-        }
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\source\repos\Email-Client\Server\Server\ServerDatabase.mdf;Integrated Security=True;Connect Timeout=30";
+            sqlConnection = new SqlConnection(connectionString);
 
-        private void StartServer()
-        {
-            server = new TcpListener(IPAddress.Any, 5000);
-            server.Start();
-            isRunning = true;
-            Thread acceptThread = new Thread(AcceptClients);
-            acceptThread.Start();
-            MessageBox.Show("Server started...");
-        }
-
-        private void AcceptClients()
-        {
-            while (isRunning)
+            try
             {
-                TcpClient client = server.AcceptTcpClient();
-                clients.Add(client);
-                Thread clientThread = new Thread(HandleClient);
-                clientThread.Start(client);
+                sqlConnection.Open();
+                MessageBox.Show("Kết nối đến cơ sở dữ liệu thành công.");
+                StartListening();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi kết nối: {ex.Message}");
             }
         }
 
-        private void HandleClient(object obj)
+        private void StartListening()
         {
-            TcpClient client = (TcpClient)obj;
-            NetworkStream stream = client.GetStream();
-            byte[] buffer = new byte[1024];
+            tcpListener = new TcpListener(IPAddress.Any, 5000);
+            tcpListener.Start();
+            Thread listenThread = new Thread(ListenForClients);
+            listenThread.Start();
+        }
 
+        private void ListenForClients()
+        {
             while (true)
             {
-                try
-                {
-                    int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                    if (bytesRead == 0) break;
-
-                    string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-                    Invoke(new Action(() => lstChat.Items.Add("Client " + message))); // Cập nhật ListBox từ luồng khác
-                    BroadcastMessage("Client " + message);
-                }
-                catch
-                {
-                    break;
-                }
+                TcpClient client = tcpListener.AcceptTcpClient();
+                Thread clientThread = new Thread(() => HandleClient(client));
+                clientThread.Start();
             }
-
-            clients.Remove(client);
-            client.Close();
         }
 
-        private void BroadcastMessage(string message)
+        private void HandleClient(TcpClient client)
         {
-            byte[] data = Encoding.UTF8.GetBytes(message);
-            foreach (var client in clients)
+            using (client)
             {
                 NetworkStream stream = client.GetStream();
-                stream.Write(data, 0, data.Length);
+                byte[] buffer = new byte[256];
+                int bytesRead = stream.Read(buffer, 0, buffer.Length);
+                string clientInfo = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                string[] details = clientInfo.Split(':');
+
+                if (details.Length == 3) // Đối với đăng ký
+                {
+                    string username = details[0];
+                    string email = details[1];
+                    string password = details[2];
+
+                    // Kiểm tra username đã tồn tại
+                    string checkUsername = "SELECT COUNT(*) FROM Register WHERE username = @username";
+                    using (SqlCommand cmdCheck = new SqlCommand(checkUsername, sqlConnection))
+                    {
+                        cmdCheck.Parameters.AddWithValue("@username", username);
+                        int userCount = (int)cmdCheck.ExecuteScalar();
+                        if (userCount > 0)
+                        {
+                            byte[] responseData = Encoding.UTF8.GetBytes("Username already exists");
+                            stream.Write(responseData, 0, responseData.Length);
+                            return;
+                        }
+                    }
+
+                    // Lưu thông tin người dùng
+                    string registerQuery = "INSERT INTO Register (username, email, password) VALUES (@username, @email, @password)";
+                    using (SqlCommand cmd = new SqlCommand(registerQuery, sqlConnection))
+                    {
+                        cmd.Parameters.AddWithValue("@username", username);
+                        cmd.Parameters.AddWithValue("@email", email);
+                        cmd.Parameters.AddWithValue("@password", password);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    // Cập nhật giao diện hiển thị
+                    Invoke(new Action(() =>
+                    {
+                        lstChat.Items.Add($"User {username} has signed up.");
+                    }));
+
+                    // Gửi phản hồi cho client
+                    byte[] response = Encoding.UTF8.GetBytes("Registration Successful");
+                    stream.Write(response, 0, response.Length);
+                }
+                else if (details.Length == 2) // Đối với đăng nhập
+                {
+                    string username = details[0];
+                    string password = PasswordHandler.HashPassword(details[1]);
+
+                    // Kiểm tra thông tin đăng nhập với cơ sở dữ liệu
+                    string loginQuery = "SELECT COUNT(*) FROM Register WHERE username = @username AND password = @password";
+                    using (SqlCommand cmd = new SqlCommand(loginQuery, sqlConnection))
+                    {
+                        cmd.Parameters.AddWithValue("@username", username);
+                        cmd.Parameters.AddWithValue("@password", password);
+
+                        int userCount = (int)cmd.ExecuteScalar();
+
+                        // Gửi phản hồi về client
+                        string responseMessage = userCount > 0 ? "Success" : "Invalid Username or Password";
+                        byte[] responseData = Encoding.UTF8.GetBytes(responseMessage);
+                        stream.Write(responseData, 0, responseData.Length);
+
+                        // Cập nhật giao diện hiển thị
+                        Invoke(new Action(() =>
+                        {
+                            if (userCount > 0)
+                            {
+                                lstChat.Items.Add($"User {username} has logged in.");
+                            }
+                            else
+                            {
+                                lstChat.Items.Add($"Failed login attempt for user {username}.");
+                            }
+                        }));
+                    }
+                }
             }
         }
+
+        public static class PasswordHandler
+        {
+            public static string HashPassword(string password)
+            {
+                using (SHA256 sha256 = SHA256.Create())
+                {
+                    byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                    StringBuilder builder = new StringBuilder();
+                    foreach (byte b in bytes)
+                    {
+                        builder.Append(b.ToString("x2"));
+                    }
+                    return builder.ToString();
+                }
+            }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (sqlConnection != null && sqlConnection.State == System.Data.ConnectionState.Open)
+            {
+                sqlConnection.Close();
+            }
+
+            if (tcpListener != null)
+            {
+                tcpListener.Stop();
+            }
+        }
+
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtMessage.Text)) return;
-
-            string message = "Server: " + txtMessage.Text;
-            lstChat.Items.Add(message);
-            BroadcastMessage(message);
-            txtMessage.Clear();
         }
 
-        protected override void OnFormClosing(FormClosingEventArgs e)
+        private void txtMessage_TextChanged(object sender, EventArgs e)
         {
-            isRunning = false;
-            server.Stop();
-            base.OnFormClosing(e);
+
+        }
+
+        private void lstChat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
