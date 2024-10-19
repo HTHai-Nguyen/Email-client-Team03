@@ -3,6 +3,8 @@
     [username] VARCHAR (100) NOT NULL,
     [password] VARCHAR (100) NOT NULL,
     [email]    VARCHAR (100) NOT NULL,
+    [fullname] VARCHAR(100) NOT NULL,
+    [birthday] DATE NOT NULL,
     CONSTRAINT [PK_Register] PRIMARY KEY CLUSTERED ([ID] ASC)
 );
 
