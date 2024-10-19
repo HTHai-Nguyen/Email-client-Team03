@@ -18,7 +18,7 @@ namespace LoginForm
         public Register()
         {
             InitializeComponent();
-            txtUsername.Select();
+            txtFullName.Select();
         }
 
         SqlConnection conn = new SqlConnection(@"Data Source=HENRY\HTHSQLSERVER;Initial Catalog=RegisterForm;Integrated Security=True");
@@ -184,5 +184,6 @@ namespace LoginForm
         {
             Application.Exit();
         }
+
     }
 }
