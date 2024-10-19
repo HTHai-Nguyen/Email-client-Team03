@@ -1,14 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Email-Client-chat\\Email-Client-main\\Server\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Email-Client-TCP-Server-Client\\Email-Client-TCP-Server-Client\\Server Chat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83CA40F5-F929-4CA7-A8E5-EFA47FC14603}|Server\\Server Chat.csproj|c:\\users\\admin\\desktop\\email-client-chat\\email-client-main\\server\\server\\serverchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{83CA40F5-F929-4CA7-A8E5-EFA47FC14603}|Server\\Server Chat.csproj|solutionrelative:server\\serverchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{83CA40F5-F929-4CA7-A8E5-EFA47FC14603}|Server Chat\\Server Chat.csproj|c:\\users\\admin\\desktop\\email-client-tcp-server-client\\email-client-tcp-server-client\\server chat\\server chat\\serverchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83CA40F5-F929-4CA7-A8E5-EFA47FC14603}|Server Chat\\Server Chat.csproj|solutionrelative:server chat\\serverchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83CA40F5-F929-4CA7-A8E5-EFA47FC14603}|Server\\Server Chat.csproj|c:\\users\\admin\\desktop\\email-client-chat\\email-client-main\\server\\server\\serverchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83CA40F5-F929-4CA7-A8E5-EFA47FC14603}|Server\\Server Chat.csproj|solutionrelative:server\\serverchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Desktop\\Email-Client-chat\\Email-Client-main\\Server\\Server\\ServerChat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\admin\\desktop\\email-client-chat\\email-client-main\\server\\server\\serverchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +20,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +32,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ServerChat.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Email-Client-chat\\Email-Client-main\\Server\\Server\\ServerChat.cs",
-              "RelativeDocumentMoniker": "Server\\ServerChat.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Email-Client-chat\\Email-Client-main\\Server\\Server\\ServerChat.cs*",
-              "RelativeToolTip": "Server\\ServerChat.cs*",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAACwAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ServerChat.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Email-Client-TCP-Server-Client\\Email-Client-TCP-Server-Client\\Server Chat\\Server Chat\\ServerChat.cs",
+              "RelativeDocumentMoniker": "Server Chat\\ServerChat.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Email-Client-TCP-Server-Client\\Email-Client-TCP-Server-Client\\Server Chat\\Server Chat\\ServerChat.cs [Design]",
+              "RelativeToolTip": "Server Chat\\ServerChat.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T14:27:52.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T15:15:15.001Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "ServerChat.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Email-Client-chat\\Email-Client-main\\Server\\Server\\ServerChat.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Email-Client-chat\\Email-Client-main\\Server\\Server\\ServerChat.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Email-Client-chat\\Email-Client-main\\Server\\Server\\ServerChat.cs",
+              "RelativeToolTip": "..\\..\\..\\Email-Client-chat\\Email-Client-main\\Server\\Server\\ServerChat.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T14:27:52.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ServerChat.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Email-Client-chat\\Email-Client-main\\Server\\Server\\ServerChat.cs",
-              "RelativeDocumentMoniker": "Server\\ServerChat.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Email-Client-chat\\Email-Client-main\\Server\\Server\\ServerChat.cs [Design]*",
-              "RelativeToolTip": "Server\\ServerChat.cs [Design]*",
+              "RelativeDocumentMoniker": "..\\..\\..\\Email-Client-chat\\Email-Client-main\\Server\\Server\\ServerChat.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Email-Client-chat\\Email-Client-main\\Server\\Server\\ServerChat.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Email-Client-chat\\Email-Client-main\\Server\\Server\\ServerChat.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T14:25:53.436Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-19T14:25:53.436Z"
             }
           ]
         }
