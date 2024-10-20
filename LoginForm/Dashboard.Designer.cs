@@ -71,7 +71,7 @@ namespace LoginForm
             this.pictureBox1.Image = global::LoginForm.Properties.Resources.Wallpaper_02;
             this.pictureBox1.Location = new System.Drawing.Point(-12, 68);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1275, 614);
+            this.pictureBox1.Size = new System.Drawing.Size(1275, 615);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
