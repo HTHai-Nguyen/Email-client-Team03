@@ -22,9 +22,9 @@ namespace LoginForm
         }
 
         
-        //SqlConnection conn = new SqlConnection(@"Data Source=HENRY\HTHSQLSERVER;Initial Catalog=RegisterForm;Integrated Security=True");
-        //SqlCommand cmd = new SqlCommand();
-        //SqlDataAdapter data = new SqlDataAdapter();
+        SqlConnection conn = new SqlConnection(@"Server=DESKTOP-0ARU1C6;Database=BTLT2;Trusted_Connection=True;");
+        SqlCommand cmd = new SqlCommand();
+        SqlDataAdapter data = new SqlDataAdapter();
 
         public class PasswordHandler
         {

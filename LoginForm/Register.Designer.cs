@@ -78,6 +78,7 @@ namespace LoginForm
             this.lblDontHave.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.74545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDontHave.ForeColor = System.Drawing.SystemColors.InfoText;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.lblDontHave.Location = new System.Drawing.Point(1093, 757);
             this.lblDontHave.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDontHave.Name = "lblDontHave";
@@ -87,6 +88,12 @@ namespace LoginForm
             this.lblDontHave.Name = "lblDontHave";
             this.lblDontHave.Size = new System.Drawing.Size(233, 24);
 >>>>>>> origin/update-ui-register
+=======
+            this.lblDontHave.Location = new System.Drawing.Point(708, 563);
+            this.lblDontHave.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDontHave.Name = "lblDontHave";
+            this.lblDontHave.Size = new System.Drawing.Size(290, 29);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.lblDontHave.TabIndex = 14;
             this.lblDontHave.Text = "Already have an account ?";
             // 
@@ -95,6 +102,7 @@ namespace LoginForm
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.70909F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.Teal;
+<<<<<<< HEAD
 <<<<<<< HEAD
             this.lblUsername.Location = new System.Drawing.Point(1052, 139);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -105,14 +113,21 @@ namespace LoginForm
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(118, 25);
 >>>>>>> origin/update-ui-register
+=======
+            this.lblUsername.Location = new System.Drawing.Point(618, 66);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(147, 31);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.lblUsername.TabIndex = 13;
             this.lblUsername.Text = "Username";
             // 
             // lblRegister
             // 
             this.lblRegister.AutoSize = true;
-            this.lblRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.10909F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRegister.ForeColor = System.Drawing.Color.Teal;
+<<<<<<< HEAD
 <<<<<<< HEAD
             this.lblRegister.Location = new System.Drawing.Point(1100, 49);
             this.lblRegister.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -123,6 +138,12 @@ namespace LoginForm
             this.lblRegister.Name = "lblRegister";
             this.lblRegister.Size = new System.Drawing.Size(318, 47);
 >>>>>>> origin/update-ui-register
+=======
+            this.lblRegister.Location = new System.Drawing.Point(740, 18);
+            this.lblRegister.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRegister.Name = "lblRegister";
+            this.lblRegister.Size = new System.Drawing.Size(311, 46);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.lblRegister.TabIndex = 12;
             this.lblRegister.Text = "Create Account";
             // 
@@ -137,10 +158,14 @@ namespace LoginForm
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.txtUsername.Size = new System.Drawing.Size(500, 46);
 =======
             this.txtUsername.Size = new System.Drawing.Size(375, 37);
 >>>>>>> origin/update-ui-register
+=======
+            this.txtUsername.Size = new System.Drawing.Size(500, 46);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.txtUsername.TabIndex = 0;
             // 
             // pnlPassword
@@ -149,11 +174,16 @@ namespace LoginForm
             this.pnlPassword.Controls.Add(this.txtPassword);
             this.pnlPassword.ForeColor = System.Drawing.Color.White;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.pnlPassword.Location = new System.Drawing.Point(1112, 423);
             this.pnlPassword.Margin = new System.Windows.Forms.Padding(4);
 =======
             this.pnlPassword.Location = new System.Drawing.Point(829, 332);
 >>>>>>> origin/update-ui-register
+=======
+            this.pnlPassword.Location = new System.Drawing.Point(678, 319);
+            this.pnlPassword.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.pnlPassword.Name = "pnlPassword";
             this.pnlPassword.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
             this.pnlPassword.Size = new System.Drawing.Size(500, 55);
@@ -171,10 +201,14 @@ namespace LoginForm
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.txtPassword.Size = new System.Drawing.Size(500, 46);
 =======
             this.txtPassword.Size = new System.Drawing.Size(375, 37);
 >>>>>>> origin/update-ui-register
+=======
+            this.txtPassword.Size = new System.Drawing.Size(500, 46);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.txtPassword.TabIndex = 2;
             // 
             // lblPassword
@@ -182,6 +216,7 @@ namespace LoginForm
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.70909F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.Teal;
+<<<<<<< HEAD
 <<<<<<< HEAD
             this.lblPassword.Location = new System.Drawing.Point(1057, 384);
             this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -192,6 +227,12 @@ namespace LoginForm
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(114, 25);
 >>>>>>> origin/update-ui-register
+=======
+            this.lblPassword.Location = new System.Drawing.Point(623, 280);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(142, 31);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.lblPassword.TabIndex = 17;
             this.lblPassword.Text = "Password";
             // 
@@ -201,11 +242,16 @@ namespace LoginForm
             this.pnlUsername.Controls.Add(this.txtUsername);
             this.pnlUsername.ForeColor = System.Drawing.Color.White;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.pnlUsername.Location = new System.Drawing.Point(1112, 178);
             this.pnlUsername.Margin = new System.Windows.Forms.Padding(4);
 =======
             this.pnlUsername.Location = new System.Drawing.Point(829, 161);
 >>>>>>> origin/update-ui-register
+=======
+            this.pnlUsername.Location = new System.Drawing.Point(678, 105);
+            this.pnlUsername.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.pnlUsername.Name = "pnlUsername";
             this.pnlUsername.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
             this.pnlUsername.Size = new System.Drawing.Size(500, 55);
@@ -218,6 +264,7 @@ namespace LoginForm
             this.linklblLogin.ForeColor = System.Drawing.Color.Teal;
             this.linklblLogin.LinkColor = System.Drawing.Color.Teal;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.linklblLogin.Location = new System.Drawing.Point(1459, 757);
             this.linklblLogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linklblLogin.Name = "linklblLogin";
@@ -227,6 +274,12 @@ namespace LoginForm
             this.linklblLogin.Name = "linklblLogin";
             this.linklblLogin.Size = new System.Drawing.Size(57, 24);
 >>>>>>> origin/update-ui-register
+=======
+            this.linklblLogin.Location = new System.Drawing.Point(1006, 563);
+            this.linklblLogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linklblLogin.Name = "linklblLogin";
+            this.linklblLogin.Size = new System.Drawing.Size(73, 29);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.linklblLogin.TabIndex = 8;
             this.linklblLogin.TabStop = true;
             this.linklblLogin.Text = "Login";
@@ -241,6 +294,7 @@ namespace LoginForm
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.29091F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.White;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnRegister.Location = new System.Drawing.Point(1145, 657);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(4);
 =======
@@ -248,6 +302,12 @@ namespace LoginForm
 >>>>>>> origin/update-ui-register
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(383, 66);
+=======
+            this.btnRegister.Location = new System.Drawing.Point(770, 494);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(306, 48);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -259,6 +319,7 @@ namespace LoginForm
             this.lblConfirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.70909F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConfirmPass.ForeColor = System.Drawing.Color.Teal;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.lblConfirmPass.Location = new System.Drawing.Point(1057, 514);
             this.lblConfirmPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblConfirmPass.Name = "lblConfirmPass";
@@ -268,6 +329,12 @@ namespace LoginForm
             this.lblConfirmPass.Name = "lblConfirmPass";
             this.lblConfirmPass.Size = new System.Drawing.Size(202, 25);
 >>>>>>> origin/update-ui-register
+=======
+            this.lblConfirmPass.Location = new System.Drawing.Point(623, 391);
+            this.lblConfirmPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblConfirmPass.Name = "lblConfirmPass";
+            this.lblConfirmPass.Size = new System.Drawing.Size(252, 31);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.lblConfirmPass.TabIndex = 17;
             this.lblConfirmPass.Text = "Confirm Password";
             // 
@@ -277,11 +344,16 @@ namespace LoginForm
             this.pnlConfirmPass.Controls.Add(this.txtConfirmPass);
             this.pnlConfirmPass.ForeColor = System.Drawing.Color.White;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.pnlConfirmPass.Location = new System.Drawing.Point(1112, 554);
             this.pnlConfirmPass.Margin = new System.Windows.Forms.Padding(4);
 =======
             this.pnlConfirmPass.Location = new System.Drawing.Point(829, 418);
 >>>>>>> origin/update-ui-register
+=======
+            this.pnlConfirmPass.Location = new System.Drawing.Point(678, 431);
+            this.pnlConfirmPass.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.pnlConfirmPass.Name = "pnlConfirmPass";
             this.pnlConfirmPass.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
             this.pnlConfirmPass.Size = new System.Drawing.Size(500, 55);
@@ -299,10 +371,14 @@ namespace LoginForm
             this.txtConfirmPass.Name = "txtConfirmPass";
             this.txtConfirmPass.PasswordChar = '*';
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.txtConfirmPass.Size = new System.Drawing.Size(500, 46);
 =======
             this.txtConfirmPass.Size = new System.Drawing.Size(375, 37);
 >>>>>>> origin/update-ui-register
+=======
+            this.txtConfirmPass.Size = new System.Drawing.Size(500, 46);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.txtConfirmPass.TabIndex = 3;
             // 
             // pnlEmail
@@ -311,11 +387,16 @@ namespace LoginForm
             this.pnlEmail.Controls.Add(this.txtEmail);
             this.pnlEmail.ForeColor = System.Drawing.Color.White;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.pnlEmail.Location = new System.Drawing.Point(1109, 299);
             this.pnlEmail.Margin = new System.Windows.Forms.Padding(4);
 =======
             this.pnlEmail.Location = new System.Drawing.Point(829, 246);
 >>>>>>> origin/update-ui-register
+=======
+            this.pnlEmail.Location = new System.Drawing.Point(678, 212);
+            this.pnlEmail.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.pnlEmail.Name = "pnlEmail";
             this.pnlEmail.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
             this.pnlEmail.Size = new System.Drawing.Size(500, 55);
@@ -332,10 +413,14 @@ namespace LoginForm
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.txtEmail.Size = new System.Drawing.Size(500, 46);
 =======
             this.txtEmail.Size = new System.Drawing.Size(375, 37);
 >>>>>>> origin/update-ui-register
+=======
+            this.txtEmail.Size = new System.Drawing.Size(500, 46);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.txtEmail.TabIndex = 1;
             // 
             // lblEmail
@@ -343,6 +428,7 @@ namespace LoginForm
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.70909F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.Teal;
+<<<<<<< HEAD
 <<<<<<< HEAD
             this.lblEmail.Location = new System.Drawing.Point(1049, 260);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -353,6 +439,12 @@ namespace LoginForm
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(70, 25);
 >>>>>>> origin/update-ui-register
+=======
+            this.lblEmail.Location = new System.Drawing.Point(618, 173);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(86, 31);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.lblEmail.TabIndex = 13;
             this.lblEmail.Text = "Email";
             // 
@@ -364,11 +456,16 @@ namespace LoginForm
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.29091F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Teal;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnClose.Location = new System.Drawing.Point(1597, 15);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
 =======
             this.btnClose.Location = new System.Drawing.Point(1198, -1);
 >>>>>>> origin/update-ui-register
+=======
+            this.btnClose.Location = new System.Drawing.Point(1199, 11);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(67, 62);
             this.btnClose.TabIndex = 9;
@@ -449,11 +546,16 @@ namespace LoginForm
             this.pictEmail.BackColor = System.Drawing.SystemColors.Control;
             this.pictEmail.Image = global::LoginForm.Properties.Resources.mail;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.pictEmail.Location = new System.Drawing.Point(1053, 299);
             this.pictEmail.Margin = new System.Windows.Forms.Padding(4);
 =======
             this.pictEmail.Location = new System.Drawing.Point(784, 246);
 >>>>>>> origin/update-ui-register
+=======
+            this.pictEmail.Location = new System.Drawing.Point(622, 212);
+            this.pictEmail.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.pictEmail.Name = "pictEmail";
             this.pictEmail.Size = new System.Drawing.Size(55, 55);
             this.pictEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -463,7 +565,11 @@ namespace LoginForm
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LoginForm.Properties.Resources.Wallpaper_031;
+<<<<<<< HEAD
             this.pictureBox1.Location = new System.Drawing.Point(-369, -1);
+=======
+            this.pictureBox1.Location = new System.Drawing.Point(-807, -152);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1357, 838);
@@ -478,11 +584,16 @@ namespace LoginForm
             this.picUsername.BackColor = System.Drawing.SystemColors.Control;
             this.picUsername.Image = global::LoginForm.Properties.Resources.user;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.picUsername.Location = new System.Drawing.Point(1056, 178);
             this.picUsername.Margin = new System.Windows.Forms.Padding(4);
 =======
             this.picUsername.Location = new System.Drawing.Point(784, 161);
 >>>>>>> origin/update-ui-register
+=======
+            this.picUsername.Location = new System.Drawing.Point(622, 105);
+            this.picUsername.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.picUsername.Name = "picUsername";
             this.picUsername.Size = new System.Drawing.Size(55, 55);
             this.picUsername.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -495,11 +606,16 @@ namespace LoginForm
             this.picConfirmPass.BackColor = System.Drawing.SystemColors.Control;
             this.picConfirmPass.Image = global::LoginForm.Properties.Resources.padlock;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.picConfirmPass.Location = new System.Drawing.Point(1056, 554);
             this.picConfirmPass.Margin = new System.Windows.Forms.Padding(4);
 =======
             this.picConfirmPass.Location = new System.Drawing.Point(784, 418);
 >>>>>>> origin/update-ui-register
+=======
+            this.picConfirmPass.Location = new System.Drawing.Point(622, 431);
+            this.picConfirmPass.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.picConfirmPass.Name = "picConfirmPass";
             this.picConfirmPass.Size = new System.Drawing.Size(55, 55);
             this.picConfirmPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -512,11 +628,16 @@ namespace LoginForm
             this.picPassword.BackColor = System.Drawing.SystemColors.Control;
             this.picPassword.Image = global::LoginForm.Properties.Resources.key;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.picPassword.Location = new System.Drawing.Point(1056, 423);
             this.picPassword.Margin = new System.Windows.Forms.Padding(4);
 =======
             this.picPassword.Location = new System.Drawing.Point(784, 332);
 >>>>>>> origin/update-ui-register
+=======
+            this.picPassword.Location = new System.Drawing.Point(622, 319);
+            this.picPassword.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.picPassword.Name = "picPassword";
             this.picPassword.Size = new System.Drawing.Size(55, 55);
             this.picPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -542,6 +663,7 @@ namespace LoginForm
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1680, 833);
 =======
             this.ClientSize = new System.Drawing.Size(1260, 677);
@@ -552,6 +674,9 @@ namespace LoginForm
             this.Controls.Add(this.picBirthday);
             this.Controls.Add(this.lblBirthday);
 >>>>>>> origin/update-ui-register
+=======
+            this.ClientSize = new System.Drawing.Size(1275, 615);
+>>>>>>> origin/DisplayUserInfoOnTheDashboard
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lblDontHave);
             this.Controls.Add(this.lblEmail);

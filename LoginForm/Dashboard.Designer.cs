@@ -45,7 +45,7 @@ namespace LoginForm
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.29091F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Teal;
-            this.btnClose.Location = new System.Drawing.Point(1597, 15);
+            this.btnClose.Location = new System.Drawing.Point(1167, 9);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(67, 62);
@@ -60,7 +60,7 @@ namespace LoginForm
             this.linklblLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linklblLogout.ForeColor = System.Drawing.Color.Teal;
             this.linklblLogout.LinkColor = System.Drawing.Color.Teal;
-            this.linklblLogout.Location = new System.Drawing.Point(16, 15);
+            this.linklblLogout.Location = new System.Drawing.Point(858, 31);
             this.linklblLogout.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linklblLogout.Name = "linklblLogout";
             this.linklblLogout.Size = new System.Drawing.Size(97, 31);
@@ -74,58 +74,63 @@ namespace LoginForm
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.10909F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.Color.Teal;
-            this.lblWelcome.Location = new System.Drawing.Point(468, 7);
+            this.lblWelcome.Location = new System.Drawing.Point(23, 9);
             this.lblWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(325, 59);
+            this.lblWelcome.Size = new System.Drawing.Size(182, 59);
             this.lblWelcome.TabIndex = 14;
-            this.lblWelcome.Text = "WELCOME! ";
+            this.lblWelcome.Text = "EMAIL";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.10909F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.Teal;
-            this.lblName.Location = new System.Drawing.Point(919, 7);
+            this.lblName.Location = new System.Drawing.Point(1068, 15);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(40, 59);
             this.lblName.TabIndex = 14;
             this.lblName.Text = " ";
             // 
-            // chatbtn
+            // menuStrip1
             // 
-            this.chatbtn.Location = new System.Drawing.Point(224, 167);
-            this.chatbtn.Name = "chatbtn";
-            this.chatbtn.Size = new System.Drawing.Size(209, 136);
-            this.chatbtn.TabIndex = 15;
-            this.chatbtn.Text = "Chat";
-            this.chatbtn.UseVisualStyleBackColor = true;
-            this.chatbtn.Click += new System.EventHandler(this.chatbtn_Click);
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.trangChủToolStripMenuItem,
+            this.mnuPersonalInfo});
+            this.menuStrip1.Location = new System.Drawing.Point(33, 89);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(386, 28);
+            this.menuStrip1.TabIndex = 15;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // pictureBox1
+            // trangChủToolStripMenuItem
             // 
-            this.pictureBox1.Image = global::LoginForm.Properties.Resources.Wallpaper_02;
-            this.pictureBox1.Location = new System.Drawing.Point(-16, 84);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1700, 756);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
+            this.trangChủToolStripMenuItem.Name = "trangChủToolStripMenuItem";
+            this.trangChủToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
+            this.trangChủToolStripMenuItem.Text = "Trang chủ";
+            // 
+            // mnuPersonalInfo
+            // 
+            this.mnuPersonalInfo.Name = "mnuPersonalInfo";
+            this.mnuPersonalInfo.Size = new System.Drawing.Size(141, 24);
+            this.mnuPersonalInfo.Text = "Thông tin cá nhân";
+            this.mnuPersonalInfo.Click += new System.EventHandler(this.mnuPersonalInfo_Click);
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1680, 833);
-            this.Controls.Add(this.chatbtn);
+            this.ClientSize = new System.Drawing.Size(1275, 615);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblWelcome);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.linklblLogout);
             this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -140,9 +145,11 @@ namespace LoginForm
         #endregion
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.LinkLabel linklblLogout;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Button chatbtn;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem trangChủToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuPersonalInfo;
     }
 }

@@ -21,8 +21,7 @@ namespace LoginForm
             InitializeComponent();
             txtFullName.Select();
         }
-
-        //SqlConnection conn = new SqlConnection(@"Data Source=HENRY\HTHSQLSERVER;Initial Catalog=RegisterForm;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Server=DESKTOP-0ARU1C6;Database=BTLT2;Trusted_Connection=True;");
 
         public class PasswordHandler
         {
@@ -181,8 +180,6 @@ namespace LoginForm
                         ClearFields();
                     }
                 }
-<<<<<<< HEAD
-=======
 
                 // Mã hóa mật khẩu
                 string hashedPassword = PasswordHandler.HashPassword(txtPassword.Text);
@@ -201,7 +198,6 @@ namespace LoginForm
 
                 MessageBox.Show("Your Account created successfully.", "Registration Success.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ClearFields();
->>>>>>> origin/update-ui-register
             }
             catch (Exception ex)
             {
@@ -270,12 +266,9 @@ namespace LoginForm
             Application.Exit();
         }
 
-<<<<<<< HEAD
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
-=======
->>>>>>> origin/update-ui-register
     }
 }

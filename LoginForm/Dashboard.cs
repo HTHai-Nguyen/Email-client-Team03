@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace LoginForm
     {
         private string username;
         private int userId; // Thêm ID người dùng
-
+        string conn = @"Server=DESKTOP-0ARU1C6;Database=BTLT2;Trusted_Connection=True;";
         public Dashboard(string username)
         {
             InitializeComponent();
@@ -43,27 +44,29 @@ namespace LoginForm
             this.Hide();
         }
 
-        private void chatbtn_Click(object sender, EventArgs e)
+        private void mnuPersonalInfo_Click(object sender, EventArgs e)
         {
-            // Khởi tạo và hiển thị form Chat với username
-            ClientChat clientChat = new ClientChat(username);
-            clientChat.Show(); // Hiển thị form Chat
-            this.Hide();
-        }
+            using (SqlConnection connection = new SqlConnection(conn))
+            {
+                connection.Open();
 
-        private void chat_txt_TextChanged(object sender, EventArgs e)
-        {
+                string query = $"SELECT * FROM USERS WHERE USERNAME = @username";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@username", username);
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    // Tạo form hiển thị thông tin khách hàng
+                    FormUserInfo formUserInfo = new FormUserInfo();
 
-        }
+                    //formUserInfo.txtFullName.Text = reader["Tên_cột_của_FullName"].ToString();
+                    formUserInfo.txtEmail.Text = reader["EMAIL"].ToString();
+                    //formUserInfo.txtBirthday.Text = reader["Tên_cột_của_Birthday"].ToString();
 
-        private void lschat_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Dashboard_Load(object sender, EventArgs e)
-        {
-
+                    // Hiển thị form
+                    formUserInfo.ShowDialog();
+                }
+            }
         }
     }
 }
