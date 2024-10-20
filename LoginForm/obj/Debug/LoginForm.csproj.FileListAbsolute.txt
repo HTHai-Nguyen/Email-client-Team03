@@ -10,6 +10,7 @@ D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.exe
 D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.pdb
 D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.Register.resources
 D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.Dashboard.resources
+<<<<<<< HEAD
 C:\Users\Admin\source\repos\Email-Client\LoginForm\bin\Debug\LoginForm.exe.config
 C:\Users\Admin\source\repos\Email-Client\LoginForm\bin\Debug\LoginForm.exe
 C:\Users\Admin\source\repos\Email-Client\LoginForm\bin\Debug\LoginForm.pdb
@@ -23,3 +24,17 @@ C:\Users\Admin\source\repos\Email-Client\LoginForm\obj\Debug\LoginForm.csproj.Co
 C:\Users\Admin\source\repos\Email-Client\LoginForm\obj\Debug\LoginForm.exe
 C:\Users\Admin\source\repos\Email-Client\LoginForm\obj\Debug\LoginForm.pdb
 C:\Users\Admin\source\repos\Email-Client\LoginForm\obj\Debug\LoginForm.ClientChat.resources
+=======
+C:\_ltmcb\Email-Client\LoginForm\bin\Debug\LoginForm.exe.config
+C:\_ltmcb\Email-Client\LoginForm\bin\Debug\LoginForm.exe
+C:\_ltmcb\Email-Client\LoginForm\bin\Debug\LoginForm.pdb
+C:\_ltmcb\Email-Client\LoginForm\obj\Debug\LoginForm.csproj.AssemblyReference.cache
+C:\_ltmcb\Email-Client\LoginForm\obj\Debug\LoginForm.Dashboard.resources
+C:\_ltmcb\Email-Client\LoginForm\obj\Debug\LoginForm.LoginForm.resources
+C:\_ltmcb\Email-Client\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
+C:\_ltmcb\Email-Client\LoginForm\obj\Debug\LoginForm.Register.resources
+C:\_ltmcb\Email-Client\LoginForm\obj\Debug\LoginForm.csproj.GenerateResource.cache
+C:\_ltmcb\Email-Client\LoginForm\obj\Debug\LoginForm.csproj.CoreCompileInputs.cache
+C:\_ltmcb\Email-Client\LoginForm\obj\Debug\LoginForm.exe
+C:\_ltmcb\Email-Client\LoginForm\obj\Debug\LoginForm.pdb
+>>>>>>> origin/update-ui-register

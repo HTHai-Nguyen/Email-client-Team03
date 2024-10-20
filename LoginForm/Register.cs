@@ -19,7 +19,7 @@ namespace LoginForm
         public Register()
         {
             InitializeComponent();
-            txtUsername.Select();
+            txtFullName.Select();
         }
 
         //SqlConnection conn = new SqlConnection(@"Data Source=HENRY\HTHSQLSERVER;Initial Catalog=RegisterForm;Integrated Security=True");
@@ -125,7 +125,8 @@ namespace LoginForm
             //}
 
             if (string.IsNullOrWhiteSpace(txtUsername.Text) || string.IsNullOrWhiteSpace(txtEmail.Text) ||
-                string.IsNullOrWhiteSpace(txtPassword.Text) || string.IsNullOrWhiteSpace(txtConfirmPass.Text))
+                string.IsNullOrWhiteSpace(txtPassword.Text) || string.IsNullOrWhiteSpace(txtConfirmPass.Text) ||
+                string.IsNullOrWhiteSpace(txtFullName.Text) || dtpBirthday.Value == DateTimePicker.MinimumDateTime)
             {
                 MessageBox.Show("Please enter information completely.", "Register Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -180,6 +181,27 @@ namespace LoginForm
                         ClearFields();
                     }
                 }
+<<<<<<< HEAD
+=======
+
+                // Mã hóa mật khẩu
+                string hashedPassword = PasswordHandler.HashPassword(txtPassword.Text);
+
+                // Sử dụng hashedPassword khi chèn vào cơ sở dữ liệu
+                string register = "INSERT INTO Register (username, email, password, fullname, birthday) VALUES (@username, @email, @password, @fullname, @birthday)";
+                using (SqlCommand cmd = new SqlCommand(register, conn))
+                {
+                    cmd.Parameters.AddWithValue("@username", txtUsername.Text);
+                    cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+                    cmd.Parameters.AddWithValue("@password", hashedPassword);
+                    cmd.Parameters.AddWithValue("@fullname", txtFullName.Text); // Thêm fullname
+                    cmd.Parameters.AddWithValue("@birthday", dtpBirthday.Value); // Thêm birthday
+                    cmd.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Your Account created successfully.", "Registration Success.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ClearFields();
+>>>>>>> origin/update-ui-register
             }
             catch (Exception ex)
             {
@@ -248,9 +270,12 @@ namespace LoginForm
             Application.Exit();
         }
 
+<<<<<<< HEAD
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
+=======
+>>>>>>> origin/update-ui-register
     }
 }
