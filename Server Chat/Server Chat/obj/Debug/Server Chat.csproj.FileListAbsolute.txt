@@ -1,0 +1,30 @@
+C:\Users\Admin\Desktop\Email-Client-chat\Email-Client-main\Server\Server\bin\Debug\Server.exe.config
+C:\Users\Admin\Desktop\Email-Client-chat\Email-Client-main\Server\Server\bin\Debug\Server.exe
+C:\Users\Admin\Desktop\Email-Client-chat\Email-Client-main\Server\Server\bin\Debug\Server.pdb
+C:\Users\Admin\Desktop\Email-Client-chat\Email-Client-main\Server\Server\obj\Debug\Server Chat.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Email-Client-chat\Email-Client-main\Server\Server\obj\Debug\Server.ServerChat.resources
+C:\Users\Admin\Desktop\Email-Client-chat\Email-Client-main\Server\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\Admin\Desktop\Email-Client-chat\Email-Client-main\Server\Server\obj\Debug\Server Chat.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Email-Client-chat\Email-Client-main\Server\Server\obj\Debug\Server Chat.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Email-Client-chat\Email-Client-main\Server\Server\obj\Debug\Server.exe
+C:\Users\Admin\Desktop\Email-Client-chat\Email-Client-main\Server\Server\obj\Debug\Server.pdb
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\bin\Debug\Server.exe.config
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\bin\Debug\Server.exe
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\bin\Debug\Server.pdb
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server Chat.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server.ServerChat.resources
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server.Properties.Resources.resources
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server Chat.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server Chat.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server.exe
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server.pdb
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\bin\Debug\Server.exe.config
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\bin\Debug\Server.exe
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\bin\Debug\Server.pdb
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server Chat.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server.ServerChat.resources
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server.Properties.Resources.resources
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server Chat.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server Chat.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server.exe
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server.pdb

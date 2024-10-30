@@ -10,6 +10,7 @@ using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 using System.Security.Cryptography;
 using System.Windows.Forms;
+using System.Net.Sockets;
 
 namespace LoginForm
 {
@@ -21,7 +22,7 @@ namespace LoginForm
             txtUsername.Select();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=HENRY\HTHSQLSERVER;Initial Catalog=RegisterForm;Integrated Security=True");
+        //SqlConnection conn = new SqlConnection(@"Data Source=HENRY\HTHSQLSERVER;Initial Catalog=RegisterForm;Integrated Security=True");
 
         public class PasswordHandler
         {
@@ -48,6 +49,81 @@ namespace LoginForm
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            //if (string.IsNullOrWhiteSpace(txtUsername.Text) || string.IsNullOrWhiteSpace(txtEmail.Text) ||
+            //    string.IsNullOrWhiteSpace(txtPassword.Text) || string.IsNullOrWhiteSpace(txtConfirmPass.Text))
+            //{
+            //    MessageBox.Show("Please enter information completely.", "Register Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    return;
+            //}
+
+            //if (!IsValidEmail(txtEmail.Text))
+            //{
+            //    MessageBox.Show("Email is not correct format.", "egister Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    txtEmail.Focus();
+            //    return;
+            //}
+
+            //if (!IsValidPassword(txtPassword.Text))
+            //{
+            //    MessageBox.Show("Password must be at least 8 characters, including uppercase letters, lowercase letters, numbers and special characters.", "Register Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    txtPassword.Clear();
+            //    txtConfirmPass.Clear();
+            //    txtPassword.Focus();
+            //    return;
+            //}
+
+            //if (txtPassword.Text != txtConfirmPass.Text)
+            //{
+            //    MessageBox.Show("Password does not match, Please try again.", "Register Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    txtPassword.Clear();
+            //    txtConfirmPass.Clear();
+            //    txtPassword.Focus();
+            //    return;
+            //}
+
+            //try
+            //{
+            //    conn.Open();
+
+            //    // Kiểm tra username đã tồn tại
+            //    string checkUsername = "SELECT COUNT(*) FROM Register WHERE username = @username";
+            //    using (SqlCommand cmdCheck = new SqlCommand(checkUsername, conn))
+            //    {
+            //        cmdCheck.Parameters.AddWithValue("@username", txtUsername.Text);
+            //        int userCount = (int)cmdCheck.ExecuteScalar();
+            //        if (userCount > 0)
+            //        {
+            //            MessageBox.Show("Username already exists, Please try again.", "Register Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //            txtUsername.Focus();
+            //            return;
+            //        }
+            //    }
+
+            //    // Mã hóa mật khẩu
+            //    string hashedPassword = PasswordHandler.HashPassword(txtPassword.Text);
+
+            //    // Sử dụng hashedPassword khi chèn vào cơ sở dữ liệu
+            //    string register = "INSERT INTO Register (username, email, password) VALUES (@username, @email, @password)";
+            //    using (SqlCommand cmd = new SqlCommand(register, conn))
+            //    {
+            //        cmd.Parameters.AddWithValue("@username", txtUsername.Text);
+            //        cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+            //        cmd.Parameters.AddWithValue("@password", hashedPassword);
+            //        cmd.ExecuteNonQuery();
+            //    }
+
+            //    MessageBox.Show("Your Account created successfully.", "Registration Success.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    ClearFields();
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("An error has occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+            //finally
+            //{
+            //    conn.Close();
+            //}
+
             if (string.IsNullOrWhiteSpace(txtUsername.Text) || string.IsNullOrWhiteSpace(txtEmail.Text) ||
                 string.IsNullOrWhiteSpace(txtPassword.Text) || string.IsNullOrWhiteSpace(txtConfirmPass.Text))
             {
@@ -57,7 +133,7 @@ namespace LoginForm
 
             if (!IsValidEmail(txtEmail.Text))
             {
-                MessageBox.Show("Email is not correct format.", "egister Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Email is not correct format.", "Register Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtEmail.Focus();
                 return;
             }
@@ -80,47 +156,34 @@ namespace LoginForm
                 return;
             }
 
+            // Mã hóa mật khẩu
+            string hashedPassword = PasswordHandler.HashPassword(txtPassword.Text);
+
+            // Gửi thông tin đăng ký đến server
             try
             {
-                conn.Open();
-
-                // Kiểm tra username đã tồn tại
-                string checkUsername = "SELECT COUNT(*) FROM Register WHERE username = @username";
-                using (SqlCommand cmdCheck = new SqlCommand(checkUsername, conn))
+                using (TcpClient client = new TcpClient("127.0.0.1", 5000)) // Địa chỉ và cổng của TCPServer
                 {
-                    cmdCheck.Parameters.AddWithValue("@username", txtUsername.Text);
-                    int userCount = (int)cmdCheck.ExecuteScalar();
-                    if (userCount > 0)
+                    NetworkStream stream = client.GetStream();
+                    string registerInfo = $"{txtUsername.Text}:{txtEmail.Text}:{hashedPassword}"; // Gửi thông tin đăng ký
+                    byte[] data = Encoding.UTF8.GetBytes(registerInfo);
+                    stream.Write(data, 0, data.Length);
+
+                    // Nhận phản hồi từ server
+                    byte[] responseData = new byte[256];
+                    int bytes = stream.Read(responseData, 0, responseData.Length);
+                    string responseMessage = Encoding.UTF8.GetString(responseData, 0, bytes);
+                    MessageBox.Show(responseMessage, "Registration", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    if (responseMessage == "Registration Successful")
                     {
-                        MessageBox.Show("Username already exists, Please try again.", "Register Failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        txtUsername.Focus();
-                        return;
+                        ClearFields();
                     }
                 }
-
-                // Mã hóa mật khẩu
-                string hashedPassword = PasswordHandler.HashPassword(txtPassword.Text);
-
-                // Sử dụng hashedPassword khi chèn vào cơ sở dữ liệu
-                string register = "INSERT INTO Register (username, email, password) VALUES (@username, @email, @password)";
-                using (SqlCommand cmd = new SqlCommand(register, conn))
-                {
-                    cmd.Parameters.AddWithValue("@username", txtUsername.Text);
-                    cmd.Parameters.AddWithValue("@email", txtEmail.Text);
-                    cmd.Parameters.AddWithValue("@password", hashedPassword);
-                    cmd.ExecuteNonQuery();
-                }
-
-                MessageBox.Show("Your Account created successfully.", "Registration Success.", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ClearFields();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("An error has occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            finally
-            {
-                conn.Close();
             }
         }
 
@@ -183,6 +246,11 @@ namespace LoginForm
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
