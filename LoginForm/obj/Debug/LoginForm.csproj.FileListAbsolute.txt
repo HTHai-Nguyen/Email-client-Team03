@@ -10,3 +10,42 @@ D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.exe
 D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.pdb
 D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.Register.resources
 D:\Studyspace\WindowsForms\LoginForm\LoginForm\obj\Debug\LoginForm.Dashboard.resources
+C:\Users\Admin\source\repos\Email-Client\LoginForm\bin\Debug\LoginForm.exe.config
+C:\Users\Admin\source\repos\Email-Client\LoginForm\bin\Debug\LoginForm.exe
+C:\Users\Admin\source\repos\Email-Client\LoginForm\bin\Debug\LoginForm.pdb
+C:\Users\Admin\source\repos\Email-Client\LoginForm\obj\Debug\LoginForm.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Email-Client\LoginForm\obj\Debug\LoginForm.Dashboard.resources
+C:\Users\Admin\source\repos\Email-Client\LoginForm\obj\Debug\LoginForm.LoginForm.resources
+C:\Users\Admin\source\repos\Email-Client\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
+C:\Users\Admin\source\repos\Email-Client\LoginForm\obj\Debug\LoginForm.Register.resources
+C:\Users\Admin\source\repos\Email-Client\LoginForm\obj\Debug\LoginForm.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Email-Client\LoginForm\obj\Debug\LoginForm.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Email-Client\LoginForm\obj\Debug\LoginForm.exe
+C:\Users\Admin\source\repos\Email-Client\LoginForm\obj\Debug\LoginForm.pdb
+C:\Users\Admin\source\repos\Email-Client\LoginForm\obj\Debug\LoginForm.ClientChat.resources
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\bin\Debug\LoginForm.exe.config
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\bin\Debug\LoginForm.exe
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\bin\Debug\LoginForm.pdb
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.ClientChat.resources
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.Dashboard.resources
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.LoginForm.resources
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.Register.resources
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.exe
+C:\Users\Admin\Desktop\Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.pdb
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\bin\Debug\LoginForm.exe.config
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\bin\Debug\LoginForm.exe
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\bin\Debug\LoginForm.pdb
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.ClientChat.resources
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.Dashboard.resources
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.LoginForm.resources
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.Register.resources
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.exe
+C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\LoginForm\obj\Debug\LoginForm.pdb
