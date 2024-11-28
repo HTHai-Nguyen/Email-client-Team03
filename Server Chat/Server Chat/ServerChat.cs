@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Net;
@@ -18,6 +19,9 @@ namespace Server
         private TcpListener server;
         private List<TcpClient> clients = new List<TcpClient>();
         private bool isRunning = false;
+
+        private string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Admin\\Desktop\\LoginForm-Ex03-Team03-Book\\LoginForm-Ex03-Team03-Book\\Server Chat\\Server Chat\\DatabaseChat.mdf\";Integrated Security=True"; // Cập nhật chuỗi kết nối của bạn
+
         public ServerChat()
         {
             InitializeComponent();
@@ -65,6 +69,7 @@ namespace Server
                     string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
                     Invoke(new Action(() => lstChat.Items.Add(message))); // Cập nhật ListBox từ luồng khác
                     BroadcastMessage(message);
+                    SaveMessageToDatabase(message); // Lưu tin nhắn vào cơ sở dữ liệu
                 }
             }
             catch (Exception ex)
@@ -95,6 +100,7 @@ namespace Server
             string message = "Server: " + txtMessage.Text;
             lstChat.Items.Add(message);
             BroadcastMessage(message);
+            SaveMessageToDatabase(message); // Lưu tin nhắn vào cơ sở dữ liệu
             txtMessage.Clear();
         }
 
@@ -108,6 +114,28 @@ namespace Server
         private void txtMessage_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void SaveMessageToDatabase(string message)
+        {
+            string query = "INSERT INTO ChatMessages (MessageContent, Timestamp) VALUES (@MessageContent, @Timestamp)";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@MessageContent", message);
+                command.Parameters.AddWithValue("@Timestamp", DateTime.Now);
+
+                try
+                {
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    Invoke(new Action(() => lstChat.Items.Add("Database Error: " + ex.Message)));
+                }
+            }
         }
     }
 }

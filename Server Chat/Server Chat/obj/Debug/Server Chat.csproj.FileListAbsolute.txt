@@ -28,3 +28,15 @@ C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-T
 C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server Chat.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server.exe
 C:\Users\Admin\Desktop\File chính Email-Client-TCP-Server-Client\Email-Client-TCP-Server-Client\Server Chat\Server Chat\obj\Debug\Server.pdb
+C:\Users\Admin\Desktop\LoginForm-Ex03-Team03-Book\LoginForm-Ex03-Team03-Book\Server Chat\Server Chat\bin\Debug\DatabaseChat.mdf
+C:\Users\Admin\Desktop\LoginForm-Ex03-Team03-Book\LoginForm-Ex03-Team03-Book\Server Chat\Server Chat\bin\Debug\DatabaseChat_log.ldf
+C:\Users\Admin\Desktop\LoginForm-Ex03-Team03-Book\LoginForm-Ex03-Team03-Book\Server Chat\Server Chat\bin\Debug\Server.exe.config
+C:\Users\Admin\Desktop\LoginForm-Ex03-Team03-Book\LoginForm-Ex03-Team03-Book\Server Chat\Server Chat\bin\Debug\Server.exe
+C:\Users\Admin\Desktop\LoginForm-Ex03-Team03-Book\LoginForm-Ex03-Team03-Book\Server Chat\Server Chat\bin\Debug\Server.pdb
+C:\Users\Admin\Desktop\LoginForm-Ex03-Team03-Book\LoginForm-Ex03-Team03-Book\Server Chat\Server Chat\obj\Debug\Server Chat.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\LoginForm-Ex03-Team03-Book\LoginForm-Ex03-Team03-Book\Server Chat\Server Chat\obj\Debug\Server.ServerChat.resources
+C:\Users\Admin\Desktop\LoginForm-Ex03-Team03-Book\LoginForm-Ex03-Team03-Book\Server Chat\Server Chat\obj\Debug\Server.Properties.Resources.resources
+C:\Users\Admin\Desktop\LoginForm-Ex03-Team03-Book\LoginForm-Ex03-Team03-Book\Server Chat\Server Chat\obj\Debug\Server Chat.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\LoginForm-Ex03-Team03-Book\LoginForm-Ex03-Team03-Book\Server Chat\Server Chat\obj\Debug\Server Chat.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\LoginForm-Ex03-Team03-Book\LoginForm-Ex03-Team03-Book\Server Chat\Server Chat\obj\Debug\Server.exe
+C:\Users\Admin\Desktop\LoginForm-Ex03-Team03-Book\LoginForm-Ex03-Team03-Book\Server Chat\Server Chat\obj\Debug\Server.pdb
